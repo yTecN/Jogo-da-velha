@@ -19,7 +19,6 @@ while True:
         if verifica(jogo.layout) or n_jogadas == 9:
             break
 
-if n_jogadas < 9 or verifica(jogo.layout):
-    cabecalho(verifica(jogo.layout))
-else:
-    cabecalho('Empate')
+
+cabecalho(verifica(jogo.layout) if n_jogadas < 9 or verifica(jogo.layout) else 'Empate')
+input('Pressione enter para continuar...')
